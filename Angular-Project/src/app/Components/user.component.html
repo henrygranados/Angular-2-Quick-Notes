@@ -29,6 +29,20 @@
 </form>
 <hr/>
 <h3>Users from API</h3>
-<div *ngFor = "let post of posts">
-  {{post.id}} {{post.name}} {{post.email}}
-</div>
+<table class="table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let post of posts" >
+    <td>{{post.id}}</td>
+    <td>{{post.name}}</td>
+    <td>{{post.email}}</td>
+  </tr>
+  </tbody>
+</table>
+
